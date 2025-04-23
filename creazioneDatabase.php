@@ -9,14 +9,14 @@ if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
 }
 
-$sql = "CREATE DATABASE IF NOT EXISTS JukeBox";
+$sql = "CREATE DATABASE IF NOT EXISTS COVALORENZO";
 if ($conn->query($sql) === TRUE) {
-    echo "Database 'JukeBox' creato con successo.<br>";
+    echo "Database 'COVALORENZO' creato con successo.<br>";
 } else {
     die("Errore nella creazione del database: " . $conn->error);
 }
 
-$conn->select_db("JukeBox");
+$conn->select_db("COVALORENZO");
 
 $sql = "
     CREATE TABLE IF NOT EXISTS Cantante (

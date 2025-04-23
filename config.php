@@ -1,12 +1,11 @@
 
 <?php
-// Configurazione del database
+
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "jukebox";
+$dbname = "COVALORENZO";
 
-// Creazione della connessione
 function getConnection() {
     global $servername, $username, $password, $dbname;
     $conn = new mysqli($servername, $username, $password, $dbname);

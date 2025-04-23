@@ -28,7 +28,7 @@ if ($check_stmt->num_rows > 0) {
 
     $insert_stmt->close();
 }
-
+echo "</ul>";
 echo "<a href='InserisciCantante.html'>aggiungi un altro cantante</a>";
 echo "<br>";
 echo "<a href='index.html'>Torna alla Home</a>";
