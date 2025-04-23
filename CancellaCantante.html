@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Elimina Cantante</title>
+</head>
+<body>
+    <h1>Elimina Cantante</h1>
+    <p>Per eliminare un cantante, inserisci tutti gli attributi esatti. Attenzione: eliminando un cantante verranno eliminate anche tutte le sue canzoni!</p>
+    
+    <form action="CancellaCantante.php" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <div>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome" required>
+        </div>
+        
+        <div>
+            <label for="nome_darte">Nome d'Arte:</label>
+            <input type="text" id="nome_darte" name="nome_darte" required>
+        </div>
+        
+        <div>
+            <label for="data_di_nascita">Data di Nascita:</label>
+            <input type="date" id="data_di_nascita" name="data_di_nascita" required>
+        </div>
+        
+        <button type="submit">Elimina Cantante</button>
+    </form>
+    
+    <button onclick="window.location.href='index.html'">Torna alla Home</button>
+</body>
+</html>

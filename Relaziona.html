@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Elimina Canzone</title>
+    <title>Associa Cantante a Canzone</title>
 </head>
 <body>
-    <h1>Elimina Canzone</h1>
-    <p>Per eliminare una canzone, inserisci tutti gli attributi esatti della canzone.</p>
+    <h1>Associa un Cantante a una Canzone</h1>
+    <p>Inserisci i dettagli della canzone e il nome d'arte del cantante per creare una relazione</p>
     
-    <form action="CancellaCanzone.php" method="post">
+    <form action="Relaziona.php" method="post">
+        <h2>Dati della Canzone:</h2>
         <div>
             <label for="titolo">Titolo:</label>
             <input type="text" id="titolo" name="titolo" required>
@@ -29,7 +30,13 @@
             <input type="text" id="producer" name="producer" required>
         </div>
         
-        <button type="submit">Elimina Canzone</button>
+        <h2>Dati del Cantante:</h2>
+        <div>
+            <label for="nome_darte">Nome d'Arte:</label>
+            <input type="text" id="nome_darte" name="nome_darte" required>
+        </div>
+        
+        <button type="submit">Associa Cantante alla Canzone</button>
     </form>
     
     <button onclick="window.location.href='index.html'">Torna alla Home</button>

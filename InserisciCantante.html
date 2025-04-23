@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggiungi Cantante</title>
+</head>
+<body>
+    <h1>Aggiungi un nuovo cantante</h1>
+    <form action="InserisciCantante.php" method="POST">
+        <label for="nome_arte">Nome d'Arte:</label>
+        <input type="text" id="nome_arte" name="nome_arte" required><br><br>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required><br><br>
+
+        <label for="data_nascita">Data di Nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+
+        <button type="submit">Aggiungi Cantante</button>
+    </form>
+</body>
+</html>

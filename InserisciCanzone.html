@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inserisci Canzone</title>
+    <title>Aggiungi Canzone</title>
 </head>
 <body>
-    <h1>Inserisci Canzone</h1>
-    
+    <h1>Aggiungi una nuova canzone</h1>
+    <form action="InserisciCanzone.php" method="POST">
+        <label for="titolo">Titolo:</label>
+        <input type="text" id="titolo" name="titolo" required><br><br>
+
+        <label for="genere">Genere:</label>
+        <input type="text" id="genere" name="genere" required><br><br>
+
+        <label for="release_date">Data di uscita:</label>
+        <input type="date" id="release_date" name="release_date" required><br><br>
+
+        <label for="producer">Produttore:</label>
+        <input type="text" id="producer" name="producer" required><br><br>
+
+        <label for="nomi_darte">Nomi d'Arte dei Cantanti (separati da virgola):</label>
+        <input type="text" id="nomi_darte" name="nomi_darte" placeholder="es. Blanco, Madame" required><br><br>
+
+        <button type="submit">Aggiungi Canzone</button>
+    </form>
 </body>
 </html>
