@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modifica Canzone</title>
+</head>
+<body>
+    <h1>Modifica Canzone</h1>
+    <p>Prima inserisci i dati attuali della canzone per trovarla, poi specifica i nuovi valori.</p>
+    
+    <form action="modificaCanzone.php" method="post">
+        <h2>Dati Attuali della Canzone (per identificarla):</h2>
+        <div>
+            <label for="titolo_vecchio">Titolo Attuale:</label>
+            <input type="text" id="titolo_vecchio" name="titolo_vecchio" required>
+        </div>
+        
+        <div>
+            <label for="genere_vecchio">Genere Attuale:</label>
+            <input type="text" id="genere_vecchio" name="genere_vecchio" required>
+        </div>
+        
+        <div>
+            <label for="release_date_vecchio">Data di Pubblicazione Attuale:</label>
+            <input type="date" id="release_date_vecchio" name="release_date_vecchio" required>
+        </div>
+        
+        <div>
+            <label for="producer_vecchio">Producer Attuale:</label>
+            <input type="text" id="producer_vecchio" name="producer_vecchio" required>
+        </div>
+        
+        <h2>Nuovi Dati della Canzone:</h2>
+        <div>
+            <label for="titolo_nuovo">Titolo Nuovo:</label>
+            <input type="text" id="titolo_nuovo" name="titolo_nuovo" required>
+        </div>
+        
+        <div>
+            <label for="genere_nuovo">Genere Nuovo:</label>
+            <input type="text" id="genere_nuovo" name="genere_nuovo" required>
+        </div>
+        
+        <div>
+            <label for="release_date_nuovo">Data di Pubblicazione Nuova:</label>
+            <input type="date" id="release_date_nuovo" name="release_date_nuovo" required>
+        </div>
+        
+        <div>
+            <label for="producer_nuovo">Producer Nuovo:</label>
+            <input type="text" id="producer_nuovo" name="producer_nuovo" required>
+        </div>
+        
+        <button type="submit">Modifica Canzone</button>
+    </form>
+    
+    <button onclick="window.location.href='index.html'">Torna alla Home</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ricerca Canzone</title>
+</head>
+<body>
+    <h1>Ricerca Canzone</h1>
+    <p>Inserisci i criteri di ricerca per trovare le canzoni. Puoi compilare solo alcuni campi per una ricerca più ampia.</p>
+    
+    <form action="ricercaCanzone.php" method="post">
+        <div>
+            <label for="titolo">Titolo:</label>
+            <input type="text" id="titolo" name="titolo">
+        </div>
+        
+        <div>
+            <label for="genere">Genere:</label>
+            <input type="text" id="genere" name="genere">
+        </div>
+        
+        <div>
+            <label for="release_date">Data di Pubblicazione:</label>
+            <input type="date" id="release_date" name="release_date">
+        </div>
+        
+        <div>
+            <label for="producer">Producer:</label>
+            <input type="text" id="producer" name="producer">
+        </div>
+        
+        <div>
+            <label for="nome_darte">Nome d'Arte del Cantante:</label>
+            <input type="text" id="nome_darte" name="nome_darte">
+        </div>
+        
+        <button type="submit">Cerca Canzone</button>
+    </form>
+    
+    <button onclick="window.location.href='index.html'">Torna alla Home</button>
+</body>
+</html>

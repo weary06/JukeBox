@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ricerca Cantante</title>
+</head>
+<body>
+    <h1>Ricerca Cantante</h1>
+    <p>Inserisci i criteri di ricerca per trovare i cantanti. Puoi compilare solo alcuni campi per una ricerca più ampia.</p>
+    
+    <form action="ricercaCantante.php" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        
+        <div>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome">
+        </div>
+        
+        <div>
+            <label for="nome_darte">Nome d'Arte:</label>
+            <input type="text" id="nome_darte" name="nome_darte">
+        </div>
+        
+        <div>
+            <label for="data_di_nascita">Data di Nascita:</label>
+            <input type="date" id="data_di_nascita" name="data_di_nascita">
+        </div>
+        
+        <div>
+            <label for="titolo_canzone">Titolo Canzone:</label>
+            <input type="text" id="titolo_canzone" name="titolo_canzone">
+        </div>
+        
+        <button type="submit">Cerca Cantante</button>
+    </form>
+    
+    <button onclick="window.location.href='index.html'">Torna alla Home</button>
+</body>
+</html>

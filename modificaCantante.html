@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modifica Cantante</title>
+</head>
+<body>
+    <h1>Modifica Cantante</h1>
+    <p>Prima inserisci i dati attuali del cantante per identificarlo, poi specifica i nuovi valori.</p>
+    
+    <form action="modificaCantante.php" method="post">
+        <h2>Dati Attuali del Cantante (per identificarlo):</h2>
+        <div>
+            <label for="nome_vecchio">Nome Attuale:</label>
+            <input type="text" id="nome_vecchio" name="nome_vecchio" required>
+        </div>
+        
+        <div>
+            <label for="cognome_vecchio">Cognome Attuale:</label>
+            <input type="text" id="cognome_vecchio" name="cognome_vecchio" required>
+        </div>
+        
+        <div>
+            <label for="nome_darte_vecchio">Nome d'Arte Attuale:</label>
+            <input type="text" id="nome_darte_vecchio" name="nome_darte_vecchio" required>
+        </div>
+        
+        <div>
+            <label for="data_nascita_vecchia">Data di Nascita Attuale:</label>
+            <input type="date" id="data_nascita_vecchia" name="data_nascita_vecchia" required>
+        </div>
+        
+        <h2>Nuovi Dati del Cantante:</h2>
+        <div>
+            <label for="nome_nuovo">Nome Nuovo:</label>
+            <input type="text" id="nome_nuovo" name="nome_nuovo" required>
+        </div>
+        
+        <div>
+            <label for="cognome_nuovo">Cognome Nuovo:</label>
+            <input type="text" id="cognome_nuovo" name="cognome_nuovo" required>
+        </div>
+        
+        <div>
+            <label for="nome_darte_nuovo">Nome d'Arte Nuovo:</label>
+            <input type="text" id="nome_darte_nuovo" name="nome_darte_nuovo" required>
+        </div>
+        
+        <div>
+            <label for="data_nascita_nuova">Data di Nascita Nuova:</label>
+            <input type="date" id="data_nascita_nuova" name="data_nascita_nuova" required>
+        </div>
+        
+        <button type="submit">Modifica Cantante</button>
+    </form>
+    
+    <button onclick="window.location.href='index.html'">Torna alla Home</button>
+</body>
+</html>
